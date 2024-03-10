@@ -1,3 +1,5 @@
+![iprofile-IaC Project](/images/project-architecture-gitops.png "GitOps Project")
+
 # Prerequisites
 #####
 - JDK 11
@@ -11,6 +13,14 @@
 - Maven
 - JSP
 - MySQL
+- SonarQube
+- EKS
+- Helm
+- ECR
+- Terraform
+- GithubActions
+- Docker
+
 # Database
 Here,we used Mysql DB 
 MSQL DB Installation Steps for Linux ubuntu:
