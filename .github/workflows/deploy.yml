@@ -100,9 +100,6 @@ jobs:
       - name: Get Kubernetes config
         run: aws eks update-kubeconfig --name ${{ env.EKS_CLUSTER }} --region ${{ env.AWS_REGION }}
 
-      - name: Print Kubeconfig
-        run: cat ~/.kube/config
-
       - name: ECR Registry Secret
         run: kubectl create secret docker-registry regcred --docker-server=${{ secrets.REGISTRY }} --docker-username=AWS --docker-password=$(aws ecr get-login-password)
 
