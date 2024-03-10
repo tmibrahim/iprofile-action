@@ -114,4 +114,4 @@ jobs:
           chart-path: helm/iprofilecharts
           namespace: default
           values: appimage=${{ secrets.REGISTRY }}/${{ env.ECR_REPOSITORY }},apptag=${{ github.sha }}
-          name: iprofile-stack
+          name: vprofile-stack
